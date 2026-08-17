@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { primaryNav } from "@/data/navigation";
 import { Button } from "@/components/ui/brand-button";
 import { BrandLogo } from "@/components/ui/BrandLogo";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 import { cn } from "@/lib/utils";
 
@@ -62,6 +63,7 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center gap-2">
+          <ThemeToggle />
           <Button asChild size="sm" className="hidden md:inline-flex">
             <Link to="/" hash="download">
               Download App

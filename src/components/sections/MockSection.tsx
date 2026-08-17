@@ -18,11 +18,7 @@ export function MockSection() {
   const ref = useScrollAnimation<HTMLElement>(mockTimeline);
 
   return (
-    <section
-      ref={ref}
-      className="brand-wash py-28 sm:py-36"
-      aria-labelledby="mock-heading"
-    >
+    <section ref={ref} className="brand-wash py-28 sm:py-36" aria-labelledby="mock-heading">
       <PageContainer width="wide">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div>
@@ -34,10 +30,7 @@ export function MockSection() {
 
             <ul className="mt-10 space-y-3" data-reveal>
               {facts.map((fact) => (
-                <li
-                  key={fact}
-                  className="flex items-start gap-3 text-sm text-muted-foreground"
-                >
+                <li key={fact} className="flex items-start gap-3 text-sm text-muted-foreground">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-success" />
                   {fact}
                 </li>
@@ -47,10 +40,7 @@ export function MockSection() {
 
           <div className="relative flex min-h-[34rem] items-center justify-center lg:justify-end">
             <div data-mock-phone className="absolute">
-              <PhoneMockup
-                tilt="right"
-                className="w-[min(58vw,14rem)] lg:w-[min(22vw,15rem)]"
-              >
+              <PhoneMockup tilt="right" className="w-[min(58vw,14rem)] lg:w-[min(22vw,15rem)]">
                 <MockTestExperience />
               </PhoneMockup>
             </div>

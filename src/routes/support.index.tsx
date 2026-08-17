@@ -39,9 +39,7 @@ function SupportPage() {
               "Screenshots if helpful (no passwords in screenshots)",
             ].map((item, i) => (
               <li key={item} className="flex gap-3">
-                <span className="font-display text-sm tabular-nums text-brand">
-                  {i + 1}.
-                </span>
+                <span className="font-display text-sm tabular-nums text-brand">{i + 1}.</span>
                 <span>{item}</span>
               </li>
             ))}

@@ -54,8 +54,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     question: "How do I delete my account?",
-    answer:
-      "See Delete account & data or email [PRIVACY_EMAIL] from your registered email.",
+    answer: "See Delete account & data or email [PRIVACY_EMAIL] from your registered email.",
   },
   {
     question: "Does Mediceen give medical advice?",
@@ -69,7 +68,6 @@ export const faqItems: FaqItem[] = [
   },
   {
     question: "How do I get help?",
-    answer:
-      "Email [SUPPORT_EMAIL] — see the Support page for what to include in your message.",
+    answer: "Email [SUPPORT_EMAIL] — see the Support page for what to include in your message.",
   },
 ];

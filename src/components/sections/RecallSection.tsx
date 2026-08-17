@@ -9,11 +9,7 @@ export function RecallSection() {
   const ref = useScrollAnimation<HTMLElement>(recallTimeline);
 
   return (
-    <section
-      ref={ref}
-      className="bg-surface py-28 sm:py-36"
-      aria-labelledby="recall-heading"
-    >
+    <section ref={ref} className="bg-surface py-28 sm:py-36" aria-labelledby="recall-heading">
       <PageContainer width="wide">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="order-2 flex justify-center lg:order-1 lg:justify-start">

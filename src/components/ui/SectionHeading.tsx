@@ -18,11 +18,7 @@ export function SectionHeading({
 }) {
   return (
     <div
-      className={cn(
-        "max-w-2xl",
-        align === "center" && "mx-auto text-center",
-        className,
-      )}
+      className={cn("max-w-2xl", align === "center" && "mx-auto text-center", className)}
       data-reveal-group
     >
       {eyebrow ? (
@@ -36,9 +32,7 @@ export function SectionHeading({
       <Tag
         className={cn(
           "text-balance-tight font-display font-semibold text-brand-ink",
-          Tag === "h1"
-            ? "text-[clamp(2.6rem,6.4vw,4.6rem)]"
-            : "text-[clamp(2rem,4.2vw,3.25rem)]",
+          Tag === "h1" ? "text-[clamp(2.6rem,6.4vw,4.6rem)]" : "text-[clamp(2rem,4.2vw,3.25rem)]",
         )}
         data-reveal
       >

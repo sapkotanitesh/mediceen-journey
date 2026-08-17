@@ -28,9 +28,7 @@ export function LeaderboardExperience() {
             data-leaderboard-row
             className={cn(
               "flex items-center justify-between rounded-2xl border px-4 py-3",
-              row.you
-                ? "border-success/40 bg-success-soft"
-                : "border-border bg-surface",
+              row.you ? "border-success/40 bg-success-soft" : "border-border bg-surface",
             )}
           >
             <span className="flex items-center gap-4">
@@ -51,9 +49,7 @@ export function LeaderboardExperience() {
                 {row.name}
               </span>
             </span>
-            <span className="text-sm tabular-nums text-muted-foreground">
-              {row.score}
-            </span>
+            <span className="text-sm tabular-nums text-muted-foreground">{row.score}</span>
           </li>
         ))}
       </ul>

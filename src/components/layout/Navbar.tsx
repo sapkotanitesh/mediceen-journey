@@ -16,7 +16,6 @@ function Wordmark() {
   );
 }
 
-
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);

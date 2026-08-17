@@ -51,8 +51,7 @@ export const howItWorks = [
   {
     step: "03",
     title: "Track progress",
-    description:
-      "Streaks, insights, bookmarks, and leaderboards show how you are improving.",
+    description: "Streaks, insights, bookmarks, and leaderboards show how you are improving.",
   },
 ];
 

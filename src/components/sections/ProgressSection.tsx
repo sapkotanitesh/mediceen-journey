@@ -10,11 +10,7 @@ export function ProgressSection() {
   const ref = useScrollAnimation<HTMLElement>(progressTimeline);
 
   return (
-    <section
-      ref={ref}
-      className="bg-surface py-28 sm:py-36"
-      aria-labelledby="progress-heading"
-    >
+    <section ref={ref} className="bg-surface py-28 sm:py-36" aria-labelledby="progress-heading">
       <PageContainer width="wide">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="flex justify-center lg:justify-start">

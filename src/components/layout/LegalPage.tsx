@@ -35,8 +35,7 @@ export function LegalPage({
 
         {showEffectiveDate ? (
           <p className="mt-6 text-xs uppercase tracking-[0.16em] text-muted-foreground">
-            Effective date: {PLACEHOLDERS.publishDate} · Last updated:{" "}
-            {LEGAL_LAST_UPDATED}
+            Effective date: {PLACEHOLDERS.publishDate} · Last updated: {LEGAL_LAST_UPDATED}
           </p>
         ) : null}
 
@@ -52,13 +51,7 @@ export function LegalPage({
   );
 }
 
-export function LegalSection({
-  heading,
-  children,
-}: {
-  heading: string;
-  children: ReactNode;
-}) {
+export function LegalSection({ heading, children }: { heading: string; children: ReactNode }) {
   return (
     <section>
       <h2 className="font-display text-lg font-semibold text-brand-ink">{heading}</h2>

@@ -25,7 +25,6 @@ export const practiceTimeline: SceneBuilder = ({ root, reducedMotion }) => {
     },
   });
 
-
   tl.from(first, { opacity: 0, y: 20, duration: 0.6 })
     .from(options, { opacity: 0, x: 14, stagger: 0.12, duration: 0.5 }, "<0.2")
     .to(

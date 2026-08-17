@@ -13,9 +13,7 @@ export function MockTestExperience() {
       <PhoneStatusBar label="Weekly Mock" />
 
       <div className="mx-4 rounded-2xl bg-brand px-4 py-3 text-primary-foreground">
-        <p className="text-[0.6rem] uppercase tracking-[0.22em] opacity-80">
-          Time remaining
-        </p>
+        <p className="text-[0.6rem] uppercase tracking-[0.22em] opacity-80">Time remaining</p>
         <p
           data-mock-timer
           className="font-display text-2xl font-semibold tabular-nums tracking-tight"

@@ -61,28 +61,11 @@ export function ProgressExperience() {
   );
 }
 
-function Chart({
-  title,
-  values,
-  color,
-}: {
-  title: string;
-  values: number[];
-  color: string;
-}) {
+function Chart({ title, values, color }: { title: string; values: number[]; color: string }) {
   return (
-    <div
-      data-insight-chart
-      className="rounded-2xl border border-border bg-card p-3 shadow-soft"
-    >
-      <p className="text-[0.6rem] uppercase tracking-[0.18em] text-muted-foreground">
-        {title}
-      </p>
-      <svg
-        viewBox="0 0 220 56"
-        className="mt-2 h-14 w-full overflow-visible"
-        aria-hidden="true"
-      >
+    <div data-insight-chart className="rounded-2xl border border-border bg-card p-3 shadow-soft">
+      <p className="text-[0.6rem] uppercase tracking-[0.18em] text-muted-foreground">{title}</p>
+      <svg viewBox="0 0 220 56" className="mt-2 h-14 w-full overflow-visible" aria-hidden="true">
         <path
           data-insight-line
           d={toPath(values)}

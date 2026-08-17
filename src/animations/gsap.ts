@@ -20,11 +20,7 @@ export function isMobileViewport(): boolean {
 }
 
 /** Standard entrance for section copy. */
-export function revealFrom(
-  targets: gsap.TweenTarget,
-  trigger: Element,
-  reducedMotion: boolean,
-) {
+export function revealFrom(targets: gsap.TweenTarget, trigger: Element, reducedMotion: boolean) {
   if (reducedMotion) {
     gsap.set(targets, { opacity: 1, y: 0 });
     return;

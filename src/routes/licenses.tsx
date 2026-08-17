@@ -37,10 +37,9 @@ function LicensesPage() {
             ]}
           />
           <p>
-            A full license notice file (NOTICE) may be shipped with app builds. For
-            third-party license texts, refer to the “Open source licenses” or
-            “Acknowledgements” section in the app settings when available, or contact{" "}
-            {PLACEHOLDERS.supportEmail}.
+            A full license notice file (NOTICE) may be shipped with app builds. For third-party
+            license texts, refer to the “Open source licenses” or “Acknowledgements” section in the
+            app settings when available, or contact {PLACEHOLDERS.supportEmail}.
           </p>
         </LegalSection>
       </LegalPage>

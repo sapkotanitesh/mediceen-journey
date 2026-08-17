@@ -21,7 +21,6 @@ export const mockTimeline: SceneBuilder = ({ root, reducedMotion }) => {
     scrollTrigger: { trigger: root, start: "top 85%", end: "center 55%", scrub: 0.9 },
   });
 
-
   tl.from(mockPhone, { opacity: 0, y: 40, duration: 0.8 });
 
   clockFrames.forEach((frame, i) => {

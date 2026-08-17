@@ -1,9 +1,7 @@
 import { useLayoutEffect, useRef, type RefObject } from "react";
 import { gsap, prefersReducedMotion, registerGsap } from "@/animations/gsap";
 
-export type SceneBuilder = (
-  context: { root: HTMLElement; reducedMotion: boolean },
-) => void;
+export type SceneBuilder = (context: { root: HTMLElement; reducedMotion: boolean }) => void;
 
 /**
  * Runs a GSAP scene scoped to a container element.

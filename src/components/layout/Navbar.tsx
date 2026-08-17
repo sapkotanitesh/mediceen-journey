@@ -3,19 +3,18 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { primaryNav } from "@/data/navigation";
 import { Button } from "@/components/ui/brand-button";
+import { BrandLogo } from "@/components/ui/BrandLogo";
+
 import { cn } from "@/lib/utils";
 
 function Wordmark() {
   return (
-    <Link
-      to="/"
-      className="font-display text-[1.05rem] font-bold uppercase tracking-[0.22em] text-brand"
-      aria-label="Mediceen home"
-    >
-      Mediceen
+    <Link to="/" aria-label="Mediceen home" className="inline-flex items-center">
+      <BrandLogo />
     </Link>
   );
 }
+
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);

@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { footerNav } from "@/data/navigation";
 import { DISCLAIMER, PLACEHOLDERS, SITE } from "@/lib/constants";
+import { BrandLogo } from "@/components/ui/BrandLogo";
+
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -9,10 +11,9 @@ export function Footer() {
     <footer className="border-t border-border bg-surface">
       <div className="mx-auto grid w-full max-w-[88rem] gap-12 px-6 py-16 sm:px-8 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <p className="font-display text-[1.05rem] font-bold uppercase tracking-[0.22em] text-brand">
-            Mediceen
-          </p>
-          <p className="mt-3 text-sm text-muted-foreground">{SITE.tagline}</p>
+          <BrandLogo markClassName="h-9 w-9" wordmarkClassName="h-[1.3rem]" />
+          <p className="mt-4 text-sm text-muted-foreground">{SITE.tagline}</p>
+
           <p className="mt-6 max-w-md text-xs leading-relaxed text-muted-foreground">
             {DISCLAIMER}
           </p>

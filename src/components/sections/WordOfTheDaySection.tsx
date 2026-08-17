@@ -19,10 +19,7 @@ export function WordOfTheDaySection() {
           >
             Word of the Day
           </p>
-          <p
-            className="mt-4 font-display text-3xl font-semibold text-brand-ink"
-            data-reveal
-          >
+          <p className="mt-4 font-display text-3xl font-semibold text-brand-ink" data-reveal>
             {wordOfTheDay.term}
           </p>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground" data-reveal>

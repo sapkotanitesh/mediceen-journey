@@ -44,9 +44,7 @@ export function FinalMomentSection() {
             <div className="flex h-full flex-col">
               <PhoneStatusBar label="Today" />
               <div className="flex flex-1 flex-col items-center justify-center gap-3 px-6 text-center">
-                <p className="font-display text-3xl font-semibold text-brand-ink">
-                  12
-                </p>
+                <p className="font-display text-3xl font-semibold text-brand-ink">12</p>
                 <p className="text-[0.66rem] uppercase tracking-[0.2em] text-muted-foreground">
                   Day streak
                 </p>

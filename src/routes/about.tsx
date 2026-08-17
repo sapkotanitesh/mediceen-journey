@@ -34,9 +34,9 @@ function AboutPage() {
       >
         <LegalSection heading="Phase 1 scope">
           <p>
-            Phase 1 covers core undergraduate subjects including Anatomy, Physiology,
-            Pharmacology, Pathology, Biochemistry, Microbiology, and Immunology. Support
-            for additional exams may follow.
+            Phase 1 covers core undergraduate subjects including Anatomy, Physiology, Pharmacology,
+            Pathology, Biochemistry, Microbiology, and Immunology. Support for additional exams may
+            follow.
           </p>
         </LegalSection>
 
@@ -60,9 +60,8 @@ function AboutPage() {
 
         <LegalSection heading="Disclaimer">
           <p>
-            Mediceen is an independent learning product. References to MECEE-BL describe
-            the exam format we prepare for; they do not imply official partnership or
-            certification.
+            Mediceen is an independent learning product. References to MECEE-BL describe the exam
+            format we prepare for; they do not imply official partnership or certification.
           </p>
         </LegalSection>
       </LegalPage>

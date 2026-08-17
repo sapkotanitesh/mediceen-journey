@@ -102,76 +102,75 @@ Create a structure similar to:
 
 src/
 ├── assets/
-│   ├── images/
-│   ├── icons/
-│   ├── logos/
-│   └── mockups/
+│ ├── images/
+│ ├── icons/
+│ ├── logos/
+│ └── mockups/
 │
 ├── components/
-│   ├── layout/
-│   │   ├── Navbar.tsx
-│   │   ├── Footer.tsx
-│   │   └── PageContainer.tsx
-│   │
-│   ├── ui/
-│   │   ├── Button.tsx
-│   │   ├── StoreBadge.tsx
-│   │   ├── SectionHeading.tsx
-│   │   └── PhoneMockup.tsx
-│   │
-│   ├── product/
-│   │   ├── McqExperience.tsx
-│   │   ├── FlashcardExperience.tsx
-│   │   ├── MockTestExperience.tsx
-│   │   ├── ResultsExperience.tsx
-│   │   ├── ProgressExperience.tsx
-│   │   ├── LeaderboardExperience.tsx
-│   │   └── JourneyPath.tsx
-│   │
-│   └── sections/
-│       ├── Hero.tsx
-│       ├── PracticeSection.tsx
-│       ├── RecallSection.tsx
-│       ├── ReviewSection.tsx
-│       ├── MockSection.tsx
-│       ├── ProgressSection.tsx
-│       ├── JourneySection.tsx
-│       └── DownloadSection.tsx
+│ ├── layout/
+│ │ ├── Navbar.tsx
+│ │ ├── Footer.tsx
+│ │ └── PageContainer.tsx
+│ │
+│ ├── ui/
+│ │ ├── Button.tsx
+│ │ ├── StoreBadge.tsx
+│ │ ├── SectionHeading.tsx
+│ │ └── PhoneMockup.tsx
+│ │
+│ ├── product/
+│ │ ├── McqExperience.tsx
+│ │ ├── FlashcardExperience.tsx
+│ │ ├── MockTestExperience.tsx
+│ │ ├── ResultsExperience.tsx
+│ │ ├── ProgressExperience.tsx
+│ │ ├── LeaderboardExperience.tsx
+│ │ └── JourneyPath.tsx
+│ │
+│ └── sections/
+│ ├── Hero.tsx
+│ ├── PracticeSection.tsx
+│ ├── RecallSection.tsx
+│ ├── ReviewSection.tsx
+│ ├── MockSection.tsx
+│ ├── ProgressSection.tsx
+│ ├── JourneySection.tsx
+│ └── DownloadSection.tsx
 │
 ├── pages/
-│   ├── Home.tsx
-│   ├── About.tsx
-│   ├── FAQ.tsx
-│   ├── Support.tsx
-│   ├── Privacy.tsx
-│   ├── Terms.tsx
-│   ├── DeleteAccount.tsx
-│   ├── Cookies.tsx
-│   └── Licenses.tsx
+│ ├── Home.tsx
+│ ├── About.tsx
+│ ├── FAQ.tsx
+│ ├── Support.tsx
+│ ├── Privacy.tsx
+│ ├── Terms.tsx
+│ ├── DeleteAccount.tsx
+│ ├── Cookies.tsx
+│ └── Licenses.tsx
 │
 ├── animations/
-│   ├── heroTimeline.ts
-│   ├── practiceTimeline.ts
-│   ├── recallTimeline.ts
-│   ├── mockTimeline.ts
-│   ├── progressTimeline.ts
-│   └── journeyTimeline.ts
+│ ├── heroTimeline.ts
+│ ├── practiceTimeline.ts
+│ ├── recallTimeline.ts
+│ ├── mockTimeline.ts
+│ ├── progressTimeline.ts
+│ └── journeyTimeline.ts
 │
 ├── data/
-│   ├── product.ts
-│   ├── faq.ts
-│   └── navigation.ts
+│ ├── product.ts
+│ ├── faq.ts
+│ └── navigation.ts
 │
 ├── hooks/
-│   └── useScrollAnimation.ts
+│ └── useScrollAnimation.ts
 │
 ├── lib/
-│   └── constants.ts
+│ └── constants.ts
 │
 ├── App.tsx
 ├── main.tsx
 └── index.css
-
 
 You may improve this structure where appropriate, but preserve the principle:
 
@@ -227,7 +226,6 @@ Brand Blue
 
 #4D78BD
 
-
 Use for:
 
 logo typography
@@ -245,7 +243,6 @@ important visual accents
 Primary Green
 
 #5F9F56
-
 
 Use for:
 
@@ -265,7 +262,6 @@ Secondary Teal
 
 #7CC4C1
 
-
 Use for:
 
 supporting UI
@@ -281,7 +277,6 @@ visual accents
 Pure White
 
 #FFFFFF
-
 
 Use as the primary canvas.
 
@@ -340,7 +335,6 @@ About
 
                          Download App
 
-
 The navigation should remain visually lightweight.
 
 As the page scrolls:
@@ -364,23 +358,22 @@ The primary homepage should feel like one continuous product story.
 The overall narrative:
 
 DISCOVER
-   ↓
+↓
 PRACTICE
-   ↓
+↓
 RECALL
-   ↓
+↓
 REVIEW
-   ↓
+↓
 TEST
-   ↓
+↓
 RESULTS
-   ↓
+↓
 UNDERSTAND
-   ↓
+↓
 IMPROVE
-   ↓
+↓
 DOWNLOAD
-
 
 The website should not feel like:
 
@@ -393,7 +386,6 @@ Feature Card
 Feature Card
 ↓
 CTA
-
 
 Instead, the visitor should feel like they are moving through the Mediceen learning system.
 
@@ -411,7 +403,6 @@ Prepare Smarter for
 MECEE-BL
 
 Practice. Review. Improve.
-
 
 Primary visual:
 
@@ -436,15 +427,14 @@ Do NOT begin with an enormous phone.
 As scrolling begins:
 
 Hero text
-    ↓
+↓
 phone gently moves
-    ↓
+↓
 phone approaches
-    ↓
+↓
 screen becomes more visible
-    ↓
+↓
 Mediceen product experience begins
-
 
 The transition should feel like the visitor is entering the product.
 
@@ -454,11 +444,9 @@ Headline:
 
 Practice With Purpose.
 
-
 Supporting copy:
 
 Focused practice built around your MECEE-BL preparation.
-
 
 Show a realistic MCQ interface inside the phone.
 
@@ -493,19 +481,17 @@ Visual:
               │ D. ...       │
               └──────────────┘
 
-
 Animation:
 
 Question enters
-     ↓
+↓
 Options appear
-     ↓
+↓
 User selection is visualized
-     ↓
+↓
 Question transitions
-     ↓
+↓
 Next question
-
 
 IMPORTANT:
 
@@ -524,17 +510,16 @@ Do not abruptly replace the MCQ.
 Create a continuous transformation:
 
 MCQ
- ↓
+↓
 question card contracts
- ↓
+↓
 interface shifts
- ↓
+↓
 card transforms
- ↓
+↓
 card flips
- ↓
+↓
 flashcard appears
-
 
 This should communicate that practice and recall are connected.
 
@@ -544,12 +529,10 @@ Headline:
 
 Master Recall.
 
-
 Supporting copy:
 
 Practice is only half the journey.
 Remembering is where it sticks.
-
 
 Show:
 
@@ -583,21 +566,19 @@ Visual:
 
                 Easy  Hard  Missed
 
-
 Animation:
 
 Flashcard appears
-     ↓
+↓
 Card flips
-     ↓
+↓
 Answer revealed
-     ↓
+↓
 Rating controls appear
-     ↓
+↓
 Easy / Hard / Missed
-     ↓
+↓
 Card moves into review system
-
 
 Keep this section calm.
 
@@ -609,11 +590,9 @@ Headline:
 
 Review When It Matters.
 
-
 Supporting idea:
 
 Questions return when they are due.
-
 
 Represent the SM-2 spaced-repetition system visually.
 
@@ -622,11 +601,10 @@ Example:
 Question 01
 Question 02
 Question 03
-      ↓
-   Due for review
-      ↓
-   Review again
-
+↓
+Due for review
+↓
+Review again
 
 The product currently uses SM-2 scheduling for due reviews, and flashcard ratings feed that scheduling.
 
@@ -642,11 +620,9 @@ Headline:
 
 Test Yourself.
 
-
 Supporting copy:
 
 When preparation meets pressure.
-
 
 Show the Weekly MECEE-style Mock.
 
@@ -691,7 +667,6 @@ Visual:
                 │ D           │
                 └─────────────┘
 
-
 15. MOCK TEST ANIMATION
 
 Use GSAP ScrollTrigger.
@@ -699,19 +674,18 @@ Use GSAP ScrollTrigger.
 Animation sequence:
 
 Mock interface appears
-      ↓
+↓
 Timer becomes visible
-      ↓
+↓
 Question changes
-      ↓
+↓
 Progress indicator advances
-      ↓
+↓
 Another question
-      ↓
+↓
 Exam completion
-      ↓
+↓
 Results appear
-
 
 The timer does not need to run in real time.
 
@@ -731,21 +705,19 @@ Mock
 ↓
 Analytics section
 
-
 Instead:
 
 Mock finishes
-     ↓
+↓
 Result screen appears inside phone
-     ↓
+↓
 Result panel expands
-     ↓
+↓
 Key metrics separate from phone
-     ↓
+↓
 Charts begin forming
-     ↓
+↓
 Progress section begins
-
 
 This makes the product narrative continuous.
 
@@ -755,12 +727,10 @@ Headline:
 
 Understand Your Progress.
 
-
 Supporting copy:
 
 See what is improving.
 See where to focus next.
-
 
 Show actual supported concepts:
 
@@ -794,19 +764,17 @@ Visual:
        ─────────────────
           30-Day Trend
 
-
 Animation:
 
 Accuracy appears
-     ↓
+↓
 Chart draws itself
-     ↓
+↓
 Subject metrics appear
-     ↓
+↓
 7-day chart expands
-     ↓
+↓
 30-day chart appears
-
 
 Keep animation elegant.
 
@@ -815,7 +783,6 @@ Keep animation elegant.
 Headline:
 
 Keep Climbing.
-
 
 Show a compact leaderboard.
 
@@ -838,13 +805,11 @@ Example:
              #06   Student
              #07   Student
 
-
 Animate rows gently into position.
 
 Highlight "You" using:
 
 #5F9F56
-
 
 Do not make this a huge dashboard.
 
@@ -862,7 +827,6 @@ Example:
 
        The junction between
        two communicating neurons.
-
 
 The student Home experience includes one published medical term for the day.
 
@@ -898,7 +862,6 @@ Concept:
                     │
                     └────────→ PRACTICE
 
-
 Better yet, create a curved/circular visual path.
 
 A small indicator should travel along the path as the visitor scrolls.
@@ -906,7 +869,6 @@ A small indicator should travel along the path as the visitor scrolls.
 Core idea:
 
 Prepare → Measure → Improve → Repeat
-
 
 This is the emotional conclusion of the website.
 
@@ -922,7 +884,6 @@ Keep it extremely simple.
                 Your pace.
 
                   PHONE
-
 
 Use:
 
@@ -942,18 +903,15 @@ Headline:
 
 Ready to Prepare?
 
-
 Supporting copy:
 
 Your MECEE-BL journey starts here.
-
 
 Buttons:
 
 [ Download on the App Store ]
 
 [ Get it on Google Play ]
-
 
 Use the official store URLs as configurable constants.
 
@@ -964,7 +922,6 @@ The legal content pack explicitly defines placeholders for the App Store and Goo
 Create a reusable:
 
 StoreBadge.tsx
-
 
 component.
 
@@ -991,7 +948,6 @@ Licenses
 
 © [YEAR] [LEGAL_ENTITY_NAME]
 
-
 Use the legal content pack as the source of truth for footer structure and links.
 
 Do not invent legal entity information.
@@ -1003,15 +959,14 @@ Keep placeholders where the source document contains placeholders.
 Implement the following routes:
 
 /
- /about
- /faq
- /support
- /privacy
- /terms
- /support/delete-account
- /cookies
- /licenses
-
+/about
+/faq
+/support
+/privacy
+/terms
+/support/delete-account
+/cookies
+/licenses
 
 These paths are defined in the Mediceen website/legal content pack.
 
@@ -1061,7 +1016,6 @@ Preserve placeholders such as:
 [GOVERNING_LAW]
 [MINIMUM_AGE]
 
-
 until real values are supplied.
 
 The document explicitly says the Privacy Policy and Terms are drafts requiring legal review before publication.
@@ -1103,7 +1057,6 @@ Use:
 GSAP
 GSAP ScrollTrigger
 
-
 Create independent animation scenes.
 
 For example:
@@ -1116,7 +1069,6 @@ MockTimeline
 ResultsTimeline
 ProgressTimeline
 JourneyTimeline
-
 
 Do NOT create one gigantic ScrollTrigger timeline for the entire website.
 
@@ -1162,7 +1114,6 @@ INTERACTION
 ↓
 PAUSE
 
-
 Example:
 
 Hero
@@ -1186,7 +1137,6 @@ Journey
 Final phone
 ↓
 Download
-
 
 Do not make every section aggressively animated.
 
@@ -1212,7 +1162,6 @@ Continuity
 ↓
 Animation
 
-
 NOT:
 
 Animation
@@ -1221,13 +1170,11 @@ Force everything into viewport
 ↓
 Crowd page
 
-
 Some sections may naturally require:
 
 120vh
 140vh
 160vh
-
 
 or longer.
 
@@ -1242,7 +1189,6 @@ The phone is the main visual product object.
 Desktop guideline:
 
 25–40vw
-
 
 depending on the section.
 
@@ -1286,20 +1232,17 @@ Do not simply scale the desktop design down.
 
 Desktop:
 
-TEXT              PHONE
-
+TEXT PHONE
 
 or:
 
-PHONE             ANALYTICS
-
+PHONE ANALYTICS
 
 Tablet:
 
 TEXT
 PHONE
 SUPPORTING UI
-
 
 Mobile:
 
@@ -1308,7 +1251,6 @@ TEXT
 PHONE
 
 SUPPORTING UI
-
 
 On mobile:
 
@@ -1329,7 +1271,6 @@ ensure all text remains readable
 Respect:
 
 prefers-reduced-motion
-
 
 and provide a reduced-motion experience.
 
@@ -1379,13 +1320,11 @@ src/data/product.ts
 src/data/faq.ts
 src/data/navigation.ts
 
-
 Example:
 
 export const productFeatures = [...]
 export const navigationItems = [...]
 export const faqItems = [...]
-
 
 This makes future content changes easy.
 
@@ -1399,11 +1338,9 @@ Homepage title:
 
 Mediceen - MECEE-BL Medical Entrance Prep
 
-
 Homepage meta description:
 
 Practice MCQs, spaced review, flashcards, and weekly MECEE-style mocks. Built for Nepal medical aspirants. Download free.
-
 
 The legal content pack also defines SEO titles and metadata for About, FAQ, Privacy, Terms, Support, Delete Account, Cookies, and Licenses.
 
@@ -1428,7 +1365,6 @@ sitemap-ready structure
 Use:
 
 https://mediceen.app/
-
 
 as the canonical production domain.
 
@@ -1485,17 +1421,16 @@ The marketing website should showcase these experiences visually, not reproduce 
 The emotional progression should be:
 
 Curiosity
-    ↓
+↓
 Understanding
-    ↓
+↓
 Interaction
-    ↓
+↓
 Trust
-    ↓
+↓
 Motivation
-    ↓
+↓
 Action
-
 
 The visitor should finish thinking:
 
@@ -1632,7 +1567,6 @@ Google Play
 
 FOOTER
 
-
 40. IMPORTANT PRODUCT ACCURACY RULE
 
 Before implementing any visual, compare it against the provided product documents.
@@ -1661,7 +1595,6 @@ Leaderboards
 Word of the Day
 Study streaks
 
-
 Do not present roadmap items such as:
 
 Custom timed sessions
@@ -1669,7 +1602,6 @@ Push notifications
 Offline mode
 Translations
 Live synchronized exams
-
 
 as if they are already shipped.
 
@@ -1727,7 +1659,6 @@ Final Product Moment
 Download CTA
 Footer
 
-
 Make sure:
 
 spacing is excellent
@@ -1758,7 +1689,6 @@ AI-generated landing page
 dashboard
 education portal
 
-
 It should feel:
 
                  MEDICEEN
@@ -1781,7 +1711,6 @@ It should feel:
                 ↓
 
           download
-
 
 The most important principle is:
 

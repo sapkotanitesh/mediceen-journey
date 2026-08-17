@@ -33,9 +33,8 @@ export function Hero() {
               className="mt-6 max-w-lg text-[clamp(1.02rem,1.4vw,1.2rem)] leading-relaxed text-muted-foreground"
               data-reveal
             >
-              Practice. Review. Improve. Mediceen helps Nepal medical aspirants build
-              recall with MCQs, spaced repetition, flashcards, and weekly MECEE-style
-              mocks.
+              Practice. Review. Improve. Mediceen helps Nepal medical aspirants build recall with
+              MCQs, spaced repetition, flashcards, and weekly MECEE-style mocks.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3" data-reveal>
@@ -53,9 +52,7 @@ export function Hero() {
 
             <div className="mt-8" data-reveal>
               <StoreBadges />
-              <p className="mt-3 text-xs text-muted-foreground">
-                Store links go live at launch.
-              </p>
+              <p className="mt-3 text-xs text-muted-foreground">Store links go live at launch.</p>
             </div>
           </div>
 
@@ -79,9 +76,7 @@ function HeroScreen() {
     <div className="flex h-full flex-col">
       <PhoneStatusBar label="Home" />
       <div className="px-5">
-        <p className="font-display text-lg font-semibold text-brand-ink">
-          Good evening
-        </p>
+        <p className="font-display text-lg font-semibold text-brand-ink">Good evening</p>
         <p className="text-[0.68rem] text-muted-foreground">Ready for today&apos;s set?</p>
       </div>
 
@@ -92,9 +87,7 @@ function HeroScreen() {
 
       <div className="mt-3 px-4">
         <div className="rounded-2xl border border-teal/40 bg-teal-soft p-3">
-          <p className="text-[0.58rem] uppercase tracking-[0.2em] text-brand">
-            Word of the Day
-          </p>
+          <p className="text-[0.58rem] uppercase tracking-[0.2em] text-brand">Word of the Day</p>
           <p className="mt-1 font-display text-sm font-semibold text-brand-ink">
             {wordOfTheDay.term}
           </p>
@@ -113,26 +106,14 @@ function HeroScreen() {
   );
 }
 
-function Tile({
-  label,
-  value,
-  tone,
-}: {
-  label: string;
-  value: string;
-  tone: "success" | "brand";
-}) {
+function Tile({ label, value, tone }: { label: string; value: string; tone: "success" | "brand" }) {
   return (
     <div
       className={`rounded-2xl border p-3 ${
-        tone === "success"
-          ? "border-success/30 bg-success-soft"
-          : "border-brand/20 bg-brand-soft"
+        tone === "success" ? "border-success/30 bg-success-soft" : "border-brand/20 bg-brand-soft"
       }`}
     >
-      <p className="text-[0.55rem] uppercase tracking-[0.18em] text-muted-foreground">
-        {label}
-      </p>
+      <p className="text-[0.55rem] uppercase tracking-[0.18em] text-muted-foreground">{label}</p>
       <p className="mt-1 font-display text-base font-semibold text-brand-ink">{value}</p>
     </div>
   );

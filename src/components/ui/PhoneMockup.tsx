@@ -34,7 +34,6 @@ export function PhoneMockup({
       role="img"
       aria-label={label}
     >
-
       <div className="h-full w-full rounded-[2.05rem] bg-[oklch(0.18_0.02_260)] p-[5px]">
         <div
           className={cn(
@@ -45,7 +44,6 @@ export function PhoneMockup({
           <div className="pointer-events-none absolute left-1/2 top-2 z-20 h-2.5 w-2.5 -translate-x-1/2 rounded-full bg-[oklch(0.14_0.02_260)] ring-1 ring-[oklch(1_0_0/0.15)]" />
           <div className="pointer-events-none absolute inset-0 z-10 rounded-[1.75rem] bg-[linear-gradient(115deg,oklch(1_0_0/0.35)_0%,transparent_28%,transparent_75%,oklch(1_0_0/0.12)_100%)]" />
           <div className="relative z-0 flex h-full flex-col pt-6">{children}</div>
-
         </div>
       </div>
     </div>

@@ -15,7 +15,6 @@ export const progressTimeline: SceneBuilder = ({ root, reducedMotion }) => {
     scrollTrigger: { trigger: root, start: "top 85%", end: "center 60%", scrub: 0.8 },
   });
 
-
   if (accuracy) {
     const value = { n: 0 };
     tl.to(value, {

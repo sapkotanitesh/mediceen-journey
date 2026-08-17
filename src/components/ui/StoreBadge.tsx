@@ -17,13 +17,7 @@ const config: Record<Store, { url: string; small: string; large: string }> = {
   },
 };
 
-export function StoreBadge({
-  store,
-  className,
-}: {
-  store: Store;
-  className?: string;
-}) {
+export function StoreBadge({ store, className }: { store: Store; className?: string }) {
   const { url, small, large } = config[store];
   const live = isStoreLinkLive(url);
   const Icon = store === "apple" ? Apple : Play;
@@ -32,9 +26,7 @@ export function StoreBadge({
     <>
       <Icon className="h-6 w-6 shrink-0" aria-hidden="true" />
       <span className="text-left leading-tight">
-        <span className="block text-[0.68rem] uppercase tracking-[0.14em] opacity-70">
-          {small}
-        </span>
+        <span className="block text-[0.68rem] uppercase tracking-[0.14em] opacity-70">{small}</span>
         <span className="block font-display text-[1.05rem] font-semibold">{large}</span>
       </span>
     </>

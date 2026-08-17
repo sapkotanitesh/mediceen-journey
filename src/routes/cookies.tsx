@@ -30,13 +30,13 @@ function CookiesPage() {
             third-party analytics unless we enable them later.
           </p>
           <p>
-            Essential cookies (if any) are used only for basic site delivery or security.
-            If we add analytics (e.g. privacy-friendly visit counts), we will update this
-            page and, where required, ask for consent.
+            Essential cookies (if any) are used only for basic site delivery or security. If we add
+            analytics (e.g. privacy-friendly visit counts), we will update this page and, where
+            required, ask for consent.
           </p>
           <p>
-            The Mediceen mobile app does not use browser cookies. It stores your login
-            session in secure device storage (SecureStore on native platforms).
+            The Mediceen mobile app does not use browser cookies. It stores your login session in
+            secure device storage (SecureStore on native platforms).
           </p>
           <p>Contact: {PLACEHOLDERS.privacyEmail}</p>
         </LegalSection>

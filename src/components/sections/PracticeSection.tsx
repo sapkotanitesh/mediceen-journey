@@ -37,8 +37,8 @@ export function PracticeSection() {
             </ul>
 
             <p className="mt-8 text-sm text-muted-foreground" data-reveal>
-              Practice is untimed by default. Every question moves you forward — answers
-              and review come after the session.
+              Practice is untimed by default. Every question moves you forward — answers and review
+              come after the session.
             </p>
           </div>
 

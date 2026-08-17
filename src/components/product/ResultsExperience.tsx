@@ -51,14 +51,10 @@ function Metric({
     <div
       data-result-metric
       className={`rounded-xl border p-3 text-left ${
-        tone === "success"
-          ? "border-success/30 bg-success-soft"
-          : "border-brand/25 bg-brand-soft"
+        tone === "success" ? "border-success/30 bg-success-soft" : "border-brand/25 bg-brand-soft"
       }`}
     >
-      <p className="text-[0.58rem] uppercase tracking-[0.18em] text-muted-foreground">
-        {label}
-      </p>
+      <p className="text-[0.58rem] uppercase tracking-[0.18em] text-muted-foreground">{label}</p>
       <p className="mt-1 font-display text-lg font-semibold text-brand-ink">{value}</p>
     </div>
   );

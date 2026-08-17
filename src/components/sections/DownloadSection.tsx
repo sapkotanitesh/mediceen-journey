@@ -20,7 +20,6 @@ export function DownloadSection() {
       <div className="brand-watermark pointer-events-none absolute inset-0" aria-hidden="true" />
 
       <PageContainer className="relative flex flex-col items-center text-center">
-
         <SectionHeading
           align="center"
           eyebrow="Download"
@@ -36,10 +35,7 @@ export function DownloadSection() {
           App Store and Google Play links will be published when the listings go live.
         </p>
 
-        <p
-          className="mt-14 max-w-2xl text-xs leading-relaxed text-muted-foreground"
-          data-reveal
-        >
+        <p className="mt-14 max-w-2xl text-xs leading-relaxed text-muted-foreground" data-reveal>
           {DISCLAIMER}
         </p>
       </PageContainer>

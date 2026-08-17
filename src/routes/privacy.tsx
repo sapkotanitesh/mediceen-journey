@@ -22,13 +22,7 @@ export const Route = createFileRoute("/privacy")({
   component: PrivacyPage,
 });
 
-function Table({
-  head,
-  rows,
-}: {
-  head: [string, string];
-  rows: [string, string][];
-}) {
+function Table({ head, rows }: { head: [string, string]; rows: [string, string][] }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-border">
       <table className="w-full text-left text-sm">
@@ -71,9 +65,9 @@ function PrivacyPage() {
 
         <LegalSection heading="2. Scope">
           <p>
-            This policy applies to students using the mobile app. Staff use a separate
-            admin dashboard governed by internal policies. This policy does not cover
-            third-party websites linked from our app or site.
+            This policy applies to students using the mobile app. Staff use a separate admin
+            dashboard governed by internal policies. This policy does not cover third-party websites
+            linked from our app or site.
           </p>
         </LegalSection>
 
@@ -92,9 +86,9 @@ function PrivacyPage() {
             ]}
           />
           <p>
-            If you sign in with Google, we receive profile information Google shares with
-            us (typically name, email, and profile picture URL). You still complete phone
-            verification before full access to the app.
+            If you sign in with Google, we receive profile information Google shares with us
+            (typically name, email, and profile picture URL). You still complete phone verification
+            before full access to the app.
           </p>
 
           <h3 className="font-display text-base font-semibold text-brand-ink">
@@ -121,22 +115,17 @@ function PrivacyPage() {
             ]}
           />
 
-          <h3 className="font-display text-base font-semibold text-brand-ink">
-            3.4 Leaderboards
-          </h3>
+          <h3 className="font-display text-base font-semibold text-brand-ink">3.4 Leaderboards</h3>
           <p>
-            If you participate in leaderboards, your display name and score may be visible
-            to other users for weekly, monthly, or all-time rankings.
+            If you participate in leaderboards, your display name and score may be visible to other
+            users for weekly, monthly, or all-time rankings.
           </p>
 
-          <h3 className="font-display text-base font-semibold text-brand-ink">
-            3.5 Phone number
-          </h3>
+          <h3 className="font-display text-base font-semibold text-brand-ink">3.5 Phone number</h3>
           <p>
-            We require a verified mobile phone number during signup (after you create your
-            account with email or Google). We send a one-time SMS code to confirm you
-            control the number. The verified number is stored on your account in our auth
-            system (Supabase).
+            We require a verified mobile phone number during signup (after you create your account
+            with email or Google). We send a one-time SMS code to confirm you control the number.
+            The verified number is stored on your account in our auth system (Supabase).
           </p>
           <LegalList
             items={[
@@ -149,16 +138,16 @@ function PrivacyPage() {
             ]}
           />
           <p>
-            If you do not complete phone verification, you may not be able to use the app
-            beyond the signup flow.
+            If you do not complete phone verification, you may not be able to use the app beyond the
+            signup flow.
           </p>
 
           <h3 className="font-display text-base font-semibold text-brand-ink">
             3.6 What we do not collect
           </h3>
           <p>
-            We do not collect payment card data, precise GPS location, contact lists, or
-            use your data for cross-app advertising or sale to data brokers.
+            We do not collect payment card data, precise GPS location, contact lists, or use your
+            data for cross-app advertising or sale to data brokers.
           </p>
         </LegalSection>
 
@@ -176,9 +165,9 @@ function PrivacyPage() {
             ]}
           />
           <p>
-            We do not use student data to train public AI models. AI tools on our platform
-            are used by administrators only to assist with content ingestion (e.g.
-            extracting questions from past papers) — not by students in the mobile app.
+            We do not use student data to train public AI models. AI tools on our platform are used
+            by administrators only to assist with content ingestion (e.g. extracting questions from
+            past papers) — not by students in the mobile app.
           </p>
         </LegalSection>
 
@@ -196,26 +185,25 @@ function PrivacyPage() {
             ]}
           />
           <p>
-            These providers process data on our behalf under their own terms and security
-            measures. Data may be stored in {PLACEHOLDERS.supabaseRegion} and other
-            regions where these providers operate.
+            These providers process data on our behalf under their own terms and security measures.
+            Data may be stored in {PLACEHOLDERS.supabaseRegion} and other regions where these
+            providers operate.
           </p>
         </LegalSection>
 
         <LegalSection heading="6. Retention">
           <p>
-            We retain account and learning data while your account is active. If you
-            request deletion, we delete or anonymize personal data within a reasonable
-            period, except where law requires longer retention (e.g. security logs).
+            We retain account and learning data while your account is active. If you request
+            deletion, we delete or anonymize personal data within a reasonable period, except where
+            law requires longer retention (e.g. security logs).
           </p>
         </LegalSection>
 
         <LegalSection heading="7. Security">
           <p>
-            We use industry-standard measures including encryption in transit (HTTPS/TLS),
-            access controls, and row-level security on our database so users can only
-            access their own data where applicable. No method of transmission over the
-            Internet is 100% secure.
+            We use industry-standard measures including encryption in transit (HTTPS/TLS), access
+            controls, and row-level security on our database so users can only access their own data
+            where applicable. No method of transmission over the Internet is 100% secure.
           </p>
         </LegalSection>
 
@@ -238,25 +226,25 @@ function PrivacyPage() {
 
         <LegalSection heading="9. Children">
           <p>
-            Mediceen is not directed at children under {PLACEHOLDERS.minimumAge}. We do
-            not knowingly collect data from anyone below that age. Contact us if you
-            believe we have collected a child&apos;s data in error.
+            Mediceen is not directed at children under {PLACEHOLDERS.minimumAge}. We do not
+            knowingly collect data from anyone below that age. Contact us if you believe we have
+            collected a child&apos;s data in error.
           </p>
         </LegalSection>
 
         <LegalSection heading="10. International transfers">
           <p>
-            If you use Mediceen from outside Nepal, your data may be processed in Nepal
-            and in countries where our providers host infrastructure. We take steps to
-            protect data in line with this policy.
+            If you use Mediceen from outside Nepal, your data may be processed in Nepal and in
+            countries where our providers host infrastructure. We take steps to protect data in line
+            with this policy.
           </p>
         </LegalSection>
 
         <LegalSection heading="11. Changes">
           <p>
-            We may update this policy. We will post the new version at
-            https://mediceen.app/privacy and update the “Last updated” date. Continued use
-            after changes means you accept the updated policy where permitted by law.
+            We may update this policy. We will post the new version at https://mediceen.app/privacy
+            and update the “Last updated” date. Continued use after changes means you accept the
+            updated policy where permitted by law.
           </p>
         </LegalSection>
 

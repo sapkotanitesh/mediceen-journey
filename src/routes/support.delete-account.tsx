@@ -3,8 +3,7 @@ import { LegalPage, LegalList, LegalSection } from "@/components/layout/LegalPag
 import { PLACEHOLDERS } from "@/lib/constants";
 
 const title = "Delete Account & Data - Mediceen";
-const description =
-  "How to request deletion of your Mediceen account and personal data.";
+const description = "How to request deletion of your Mediceen account and personal data.";
 
 export const Route = createFileRoute("/support/delete-account")({
   head: () => ({
@@ -38,21 +37,18 @@ function DeleteAccountPage() {
               "Include your display name (if known), the phone number on your account (if any), and a statement that you want your account permanently deleted.",
             ].map((item, i) => (
               <li key={item} className="flex gap-3">
-                <span className="font-display text-sm tabular-nums text-brand">
-                  {i + 1}.
-                </span>
+                <span className="font-display text-sm tabular-nums text-brand">{i + 1}.</span>
                 <span>{item}</span>
               </li>
             ))}
           </ol>
           <p>
             If you signed up with Google only and cannot email from that address, contact{" "}
-            {PLACEHOLDERS.supportEmail} with proof of account ownership (we will verify
-            manually).
+            {PLACEHOLDERS.supportEmail} with proof of account ownership (we will verify manually).
           </p>
           <p>
-            When in-app account deletion is added to the app, this page will be updated to
-            describe that flow first.
+            When in-app account deletion is added to the app, this page will be updated to describe
+            that flow first.
           </p>
         </LegalSection>
 

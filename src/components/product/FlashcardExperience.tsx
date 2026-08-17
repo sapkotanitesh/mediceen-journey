@@ -10,11 +10,7 @@ export function FlashcardExperience() {
       <PhoneStatusBar label="Flashcards" />
 
       <div className="flex flex-1 items-center px-5">
-        <div
-          className="relative w-full"
-          style={{ perspective: "1200px" }}
-          data-card-scene
-        >
+        <div className="relative w-full" style={{ perspective: "1200px" }} data-card-scene>
           <div
             data-card-inner
             className="relative h-52 w-full"
@@ -29,16 +25,11 @@ export function FlashcardExperience() {
               </p>
               <p className="mt-auto text-[0.66rem] text-muted-foreground">Tap to flip</p>
             </Face>
-            <Face
-              className="border-teal bg-teal-soft"
-              style={{ transform: "rotateY(180deg)" }}
-            >
+            <Face className="border-teal bg-teal-soft" style={{ transform: "rotateY(180deg)" }}>
               <p className="text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-brand">
                 Answer
               </p>
-              <p className="mt-4 text-[0.85rem] leading-relaxed text-brand-ink">
-                {card.back}
-              </p>
+              <p className="mt-4 text-[0.85rem] leading-relaxed text-brand-ink">{card.back}</p>
             </Face>
           </div>
         </div>

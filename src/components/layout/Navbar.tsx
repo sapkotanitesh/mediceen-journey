@@ -40,7 +40,7 @@ export function Navbar() {
       )}
     >
       <nav
-        className="mx-auto flex h-16 w-full max-w-[88rem] items-center justify-between px-6 sm:px-8"
+        className="mx-auto flex h-16 w-full max-w-[76rem] items-center justify-between px-6 sm:px-8"
         aria-label="Primary"
       >
         <Wordmark />

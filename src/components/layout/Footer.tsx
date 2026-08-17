@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { footerNav } from "@/data/navigation";
 import { DISCLAIMER, PLACEHOLDERS, SITE } from "@/lib/constants";
+import { BrandLogo } from "@/components/ui/BrandLogo";
+
 
 export function Footer() {
   const year = new Date().getFullYear();

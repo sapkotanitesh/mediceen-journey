@@ -89,6 +89,41 @@
   --ring: var(--brand);
 }
 
+.dark {
+  /* Brand tuned for dark surfaces */
+  --brand: oklch(0.7 0.11 259.6);
+  --brand-soft: oklch(0.3 0.045 259.6);
+  --brand-ink: oklch(0.94 0.012 259.6);
+  --success: oklch(0.7 0.11 143.2);
+  --success-soft: oklch(0.31 0.05 143.2);
+  --teal: oklch(0.8 0.07 191.6);
+  --teal-soft: oklch(0.31 0.04 191.6);
+
+  --background: oklch(0.17 0.018 259.6);
+  --foreground: oklch(0.94 0.008 259.6);
+  --surface: oklch(0.2 0.02 259.6);
+  --surface-2: oklch(0.245 0.022 259.6);
+  --card: oklch(0.215 0.021 259.6);
+  --card-foreground: oklch(0.94 0.008 259.6);
+  --popover: oklch(0.215 0.021 259.6);
+  --popover-foreground: oklch(0.94 0.008 259.6);
+  --primary: var(--brand);
+  --primary-foreground: oklch(0.16 0.02 259.6);
+  --secondary: oklch(0.245 0.022 259.6);
+  --secondary-foreground: var(--brand-ink);
+  --muted: oklch(0.245 0.022 259.6);
+  --muted-foreground: oklch(0.72 0.016 259.6);
+  --accent: var(--teal-soft);
+  --accent-foreground: var(--brand-ink);
+  --destructive: oklch(0.62 0.19 27);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.31 0.018 259.6);
+  --input: oklch(0.31 0.018 259.6);
+  --ring: var(--brand);
+  --shadow-soft: 0 1px 2px oklch(0 0 0 / 0.4), 0 12px 40px oklch(0 0 0 / 0.45);
+}
+
+
 @layer base {
   * {
     border-color: var(--color-border);

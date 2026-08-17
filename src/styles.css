@@ -144,6 +144,16 @@
   mask-image: radial-gradient(70% 60% at 50% 40%, black 0%, transparent 100%);
 }
 
+/* Brand watermark pattern (official mark tile). */
+@utility brand-watermark {
+  background-image: url("/__l5e/assets-v1/a82d6e58-8f40-4691-af1c-07b96616b6dd/mediceen-pattern.png");
+  background-size: 520px auto;
+  background-repeat: repeat;
+  opacity: 0.06;
+  mask-image: radial-gradient(70% 70% at 50% 50%, black 0%, transparent 100%);
+}
+
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

@@ -22,7 +22,7 @@ export function PhoneMockup({
   return (
     <div
       className={cn(
-        "relative aspect-[9/19] w-[min(78vw,20rem)] shrink-0 rounded-[2.6rem] p-[3px]",
+        "relative aspect-[9/18] w-[min(60vw,15rem)] shrink-0 rounded-[2.2rem] p-[3px]",
         "bg-[linear-gradient(160deg,oklch(0.86_0.01_260),oklch(0.42_0.02_260)_45%,oklch(0.72_0.01_260))]",
         "shadow-phone transition-transform duration-500 ease-out",
         tilt === "left" &&
@@ -35,16 +35,17 @@ export function PhoneMockup({
       aria-label={label}
     >
 
-      <div className="h-full w-full rounded-[2.45rem] bg-[oklch(0.18_0.02_260)] p-[6px]">
+      <div className="h-full w-full rounded-[2.05rem] bg-[oklch(0.18_0.02_260)] p-[5px]">
         <div
           className={cn(
-            "relative h-full w-full overflow-hidden rounded-[2.1rem] bg-background",
+            "relative h-full w-full overflow-hidden rounded-[1.75rem] bg-background",
             screenClassName,
           )}
         >
-          <div className="pointer-events-none absolute left-1/2 top-2 z-20 h-5 w-20 -translate-x-1/2 rounded-full bg-[oklch(0.18_0.02_260)]" />
-          <div className="pointer-events-none absolute inset-0 z-10 rounded-[2.1rem] bg-[linear-gradient(115deg,oklch(1_0_0/0.35)_0%,transparent_28%,transparent_75%,oklch(1_0_0/0.12)_100%)]" />
-          <div className="relative z-0 flex h-full flex-col pt-9">{children}</div>
+          <div className="pointer-events-none absolute left-1/2 top-2 z-20 h-2.5 w-2.5 -translate-x-1/2 rounded-full bg-[oklch(0.14_0.02_260)] ring-1 ring-[oklch(1_0_0/0.15)]" />
+          <div className="pointer-events-none absolute inset-0 z-10 rounded-[1.75rem] bg-[linear-gradient(115deg,oklch(1_0_0/0.35)_0%,transparent_28%,transparent_75%,oklch(1_0_0/0.12)_100%)]" />
+          <div className="relative z-0 flex h-full flex-col pt-6">{children}</div>
+
         </div>
       </div>
     </div>

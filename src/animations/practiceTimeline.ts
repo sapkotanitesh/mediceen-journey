@@ -19,11 +19,12 @@ export const practiceTimeline: SceneBuilder = ({ root, reducedMotion }) => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: root,
-      start: "top 60%",
-      end: "bottom 70%",
+      start: "top 85%",
+      end: "center 55%",
       scrub: 0.8,
     },
   });
+
 
   tl.from(first, { opacity: 0, y: 20, duration: 0.6 })
     .from(options, { opacity: 0, x: 14, stagger: 0.12, duration: 0.5 }, "<0.2")

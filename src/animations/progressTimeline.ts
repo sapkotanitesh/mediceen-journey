@@ -12,8 +12,9 @@ export const progressTimeline: SceneBuilder = ({ root, reducedMotion }) => {
   const rows = root.querySelectorAll("[data-leaderboard-row]");
 
   const tl = gsap.timeline({
-    scrollTrigger: { trigger: root, start: "top 62%", end: "bottom 75%", scrub: 0.8 },
+    scrollTrigger: { trigger: root, start: "top 85%", end: "center 60%", scrub: 0.8 },
   });
+
 
   if (accuracy) {
     const value = { n: 0 };

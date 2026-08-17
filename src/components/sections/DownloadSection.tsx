@@ -14,10 +14,13 @@ export function DownloadSection() {
     <section
       id="download"
       ref={ref}
-      className="scroll-mt-24 py-28 sm:py-36"
+      className="relative scroll-mt-24 overflow-hidden py-28 sm:py-36"
       aria-labelledby="download-heading"
     >
-      <PageContainer className="flex flex-col items-center text-center">
+      <div className="brand-watermark pointer-events-none absolute inset-0" aria-hidden="true" />
+
+      <PageContainer className="relative flex flex-col items-center text-center">
+
         <SectionHeading
           align="center"
           eyebrow="Download"

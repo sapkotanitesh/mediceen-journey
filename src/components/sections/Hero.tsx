@@ -61,7 +61,7 @@ export function Hero() {
 
           <div className="flex justify-center lg:justify-end">
             <div data-hero-phone className="will-change-transform">
-              <PhoneMockup className="w-[min(70vw,17.5rem)] lg:w-[min(30vw,19rem)]">
+              <PhoneMockup className="w-[min(56vw,14rem)] lg:w-[min(22vw,15.5rem)]">
                 <HeroScreen />
               </PhoneMockup>
             </div>

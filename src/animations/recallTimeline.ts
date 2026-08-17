@@ -16,8 +16,9 @@ export const recallTimeline: SceneBuilder = ({ root, reducedMotion }) => {
 
   gsap
     .timeline({
-      scrollTrigger: { trigger: root, start: "top 55%", end: "bottom 75%", scrub: 0.9 },
+      scrollTrigger: { trigger: root, start: "top 85%", end: "center 55%", scrub: 0.9 },
     })
+
     .from(inner, { opacity: 0, y: 30, duration: 0.6 })
     .to(inner, { rotateY: 180, duration: 1, ease: "power2.inOut" }, ">0.4")
     .to(ratings, { opacity: 1, y: 0, duration: 0.5 }, ">0.1")

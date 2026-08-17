@@ -18,8 +18,9 @@ export const mockTimeline: SceneBuilder = ({ root, reducedMotion }) => {
   const state = { q: 12 };
 
   const tl = gsap.timeline({
-    scrollTrigger: { trigger: root, start: "top 60%", end: "bottom 60%", scrub: 0.9 },
+    scrollTrigger: { trigger: root, start: "top 85%", end: "center 55%", scrub: 0.9 },
   });
+
 
   tl.from(mockPhone, { opacity: 0, y: 40, duration: 0.8 });
 

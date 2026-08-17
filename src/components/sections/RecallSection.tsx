@@ -17,7 +17,7 @@ export function RecallSection() {
       <PageContainer width="wide">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="order-2 flex justify-center lg:order-1 lg:justify-start">
-            <PhoneMockup className="w-[min(74vw,18rem)] lg:w-[min(28vw,19rem)]">
+            <PhoneMockup tilt="left" className="w-[min(74vw,18rem)] lg:w-[min(28vw,19rem)]">
               <FlashcardExperience />
             </PhoneMockup>
           </div>

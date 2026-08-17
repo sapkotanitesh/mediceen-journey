@@ -9,11 +9,14 @@ export function PhoneMockup({
   children,
   className,
   screenClassName,
+  tilt = "none",
   label = "Mediceen mobile app preview",
 }: {
   children: ReactNode;
   className?: string;
   screenClassName?: string;
+  /** Slight perspective tilt so the device leans toward the centre of the screen. */
+  tilt?: "left" | "right" | "none";
   label?: string;
 }) {
   return (
@@ -21,12 +24,17 @@ export function PhoneMockup({
       className={cn(
         "relative aspect-[9/19] w-[min(78vw,20rem)] shrink-0 rounded-[2.6rem] p-[3px]",
         "bg-[linear-gradient(160deg,oklch(0.86_0.01_260),oklch(0.42_0.02_260)_45%,oklch(0.72_0.01_260))]",
-        "shadow-phone",
+        "shadow-phone transition-transform duration-500 ease-out",
+        tilt === "left" &&
+          "[transform:perspective(1600px)_rotateY(7deg)_rotateX(1.5deg)_rotateZ(-1deg)]",
+        tilt === "right" &&
+          "[transform:perspective(1600px)_rotateY(-7deg)_rotateX(1.5deg)_rotateZ(1deg)]",
         className,
       )}
       role="img"
       aria-label={label}
     >
+
       <div className="h-full w-full rounded-[2.45rem] bg-[oklch(0.18_0.02_260)] p-[6px]">
         <div
           className={cn(

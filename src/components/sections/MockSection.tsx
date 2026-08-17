@@ -47,12 +47,16 @@ export function MockSection() {
 
           <div className="relative flex min-h-[34rem] items-center justify-center lg:justify-end">
             <div data-mock-phone className="absolute">
-              <PhoneMockup className="w-[min(74vw,18rem)] lg:w-[min(28vw,19rem)]">
+              <PhoneMockup
+                tilt="right"
+                className="w-[min(74vw,18rem)] lg:w-[min(28vw,19rem)]"
+              >
                 <MockTestExperience />
               </PhoneMockup>
             </div>
             <div data-result-phone className="absolute" style={{ opacity: 0 }}>
               <PhoneMockup
+                tilt="right"
                 label="Mediceen mock results preview"
                 className="w-[min(74vw,18rem)] lg:w-[min(28vw,19rem)]"
               >

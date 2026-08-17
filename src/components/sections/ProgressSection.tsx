@@ -18,7 +18,7 @@ export function ProgressSection() {
       <PageContainer width="wide">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="flex justify-center lg:justify-start">
-            <PhoneMockup className="w-[min(74vw,18rem)] lg:w-[min(28vw,19rem)]">
+            <PhoneMockup tilt="left" className="w-[min(74vw,18rem)] lg:w-[min(28vw,19rem)]">
               <ProgressExperience />
             </PhoneMockup>
           </div>

@@ -43,7 +43,7 @@ export function PracticeSection() {
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <PhoneMockup tilt="right" className="w-[min(74vw,18rem)] lg:w-[min(28vw,19rem)]">
+            <PhoneMockup tilt="right" className="w-[min(58vw,14rem)] lg:w-[min(22vw,15rem)]">
               <McqExperience />
             </PhoneMockup>
           </div>

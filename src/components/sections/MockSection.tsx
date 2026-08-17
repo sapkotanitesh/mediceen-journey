@@ -49,7 +49,7 @@ export function MockSection() {
             <div data-mock-phone className="absolute">
               <PhoneMockup
                 tilt="right"
-                className="w-[min(74vw,18rem)] lg:w-[min(28vw,19rem)]"
+                className="w-[min(58vw,14rem)] lg:w-[min(22vw,15rem)]"
               >
                 <MockTestExperience />
               </PhoneMockup>
@@ -58,7 +58,7 @@ export function MockSection() {
               <PhoneMockup
                 tilt="right"
                 label="Mediceen mock results preview"
-                className="w-[min(74vw,18rem)] lg:w-[min(28vw,19rem)]"
+                className="w-[min(58vw,14rem)] lg:w-[min(22vw,15rem)]"
               >
                 <ResultsExperience />
               </PhoneMockup>

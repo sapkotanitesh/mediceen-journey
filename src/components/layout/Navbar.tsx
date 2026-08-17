@@ -3,6 +3,8 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { primaryNav } from "@/data/navigation";
 import { Button } from "@/components/ui/brand-button";
+import { BrandLogo } from "@/components/ui/BrandLogo";
+
 import { cn } from "@/lib/utils";
 
 function Wordmark() {

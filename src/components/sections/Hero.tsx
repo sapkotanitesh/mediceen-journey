@@ -50,17 +50,46 @@ export function Hero() {
               </Button>
             </div>
 
+            <ul className="mt-8 flex flex-wrap gap-2" data-reveal>
+              {["MECEE-BL aligned", "Spaced repetition", "Weekly mocks"].map((item) => (
+                <li
+                  key={item}
+                  className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-medium text-brand-ink"
+                >
+                  <span className="h-1.5 w-1.5 rounded-full bg-success" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+
             <div className="mt-8" data-reveal>
               <StoreBadges />
               <p className="mt-3 text-xs text-muted-foreground">Store links go live at launch.</p>
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
-            <div data-hero-phone className="will-change-transform">
+          <div className="relative flex justify-center lg:justify-end">
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute left-1/2 top-1/2 h-[26rem] w-[26rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand/15 blur-[90px]"
+            />
+            <div data-hero-phone className="relative will-change-transform">
               <PhoneMockup className="w-[min(56vw,14rem)] lg:w-[min(22vw,15.5rem)]">
                 <HeroScreen />
               </PhoneMockup>
+
+              <FloatingChip
+                className="left-0 top-24 -translate-x-[112%]"
+                label="Recall rate"
+                value="94%"
+                tone="success"
+              />
+              <FloatingChip
+                className="left-0 bottom-28 -translate-x-[128%]"
+                label="Weekly mock"
+                value="Live now"
+                tone="brand"
+              />
             </div>
           </div>
         </div>
@@ -102,6 +131,40 @@ function HeroScreen() {
         <Row label="Flashcards" meta="Biochemistry" />
         <Row label="Weekly MECEE mock" meta="Live now" />
       </div>
+    </div>
+  );
+}
+
+function FloatingChip({
+  className,
+  label,
+  value,
+  tone,
+}: {
+  className?: string;
+  label: string;
+  value: string;
+  tone: "success" | "brand";
+}) {
+  return (
+    <div
+      className={`absolute hidden items-center gap-2.5 whitespace-nowrap rounded-2xl border border-border bg-card/90 px-3.5 py-2.5 shadow-soft backdrop-blur-md lg:flex ${className ?? ""}`}
+    >
+      <span
+        className={`flex h-8 w-8 items-center justify-center rounded-xl text-sm font-semibold ${
+          tone === "success"
+            ? "bg-success-soft text-success"
+            : "bg-brand-soft text-brand"
+        }`}
+      >
+        {tone === "success" ? "↑" : "●"}
+      </span>
+      <span className="flex flex-col leading-tight">
+        <span className="text-[0.6rem] uppercase tracking-[0.16em] text-muted-foreground">
+          {label}
+        </span>
+        <span className="font-display text-sm font-semibold text-brand-ink">{value}</span>
+      </span>
     </div>
   );
 }

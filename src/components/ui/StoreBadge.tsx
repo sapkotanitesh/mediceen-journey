@@ -35,7 +35,7 @@ export function StoreBadge({ store, className }: { store: Store; className?: str
 
   const base = cn(
     "inline-flex items-center rounded-xl transition-all duration-300",
-    live ? "hover:-translate-y-0.5 hover:opacity-90" : "cursor-default opacity-60 grayscale",
+    live ? "hover:-translate-y-0.5 hover:opacity-90" : "cursor-default opacity-90",
     className,
   );
 

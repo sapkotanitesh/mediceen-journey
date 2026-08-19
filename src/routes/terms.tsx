@@ -148,8 +148,9 @@ function TermsPage() {
 
         <LegalSection heading="14. Changes">
           <p>
-            We may modify these Terms. We will post updates at https://mediceen-journey.lovable.app/terms. Material
-            changes may be communicated via the app or email where appropriate.
+            We may modify these Terms. We will post updates at
+            https://mediceen-journey.lovable.app/terms. Material changes may be communicated via the
+            app or email where appropriate.
           </p>
         </LegalSection>
 

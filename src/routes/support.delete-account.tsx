@@ -14,9 +14,14 @@ export const Route = createFileRoute("/support/delete-account")({
       { property: "og:title", content: "Delete Account - Mediceen" },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://mediceen-journey.lovable.app/support/delete-account" },
+      {
+        property: "og:url",
+        content: "https://mediceen-journey.lovable.app/support/delete-account",
+      },
     ],
-    links: [{ rel: "canonical", href: "https://mediceen-journey.lovable.app/support/delete-account" }],
+    links: [
+      { rel: "canonical", href: "https://mediceen-journey.lovable.app/support/delete-account" },
+    ],
   }),
   component: DeleteAccountPage,
 });

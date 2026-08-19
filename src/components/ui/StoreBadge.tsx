@@ -1,5 +1,3 @@
-import appStoreBadge from "@/assets/app-store-badge.png.asset.json";
-import googlePlayBadge from "@/assets/google-play-badge.png.asset.json";
 import { STORE_LINKS, isStoreLinkLive } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
@@ -8,12 +6,12 @@ type Store = "apple" | "google";
 const config: Record<Store, { url: string; src: string; alt: string }> = {
   apple: {
     url: STORE_LINKS.appStore,
-    src: appStoreBadge.url,
+    src: "/app-store-badge.png",
     alt: "Download Mediceen on the App Store",
   },
   google: {
     url: STORE_LINKS.playStore,
-    src: googlePlayBadge.url,
+    src: "/google-play-badge.png",
     alt: "Get Mediceen on Google Play",
   },
 };

@@ -18,7 +18,7 @@ export function BrandLogo({
   return (
     <span className={cn("inline-flex items-center gap-2.5", className)}>
       <img
-        src={markAsset.url}
+        src="/mediceen-mark.png"
         alt=""
         aria-hidden="true"
         className={cn("h-8 w-8 object-contain", markClassName)}
@@ -29,7 +29,7 @@ export function BrandLogo({
       />
       {showWordmark ? (
         <img
-          src={wordmarkAsset.url}
+          src="/mediceen-wordmark.png"
           alt="Mediceen"
           className={cn("h-[1.15rem] w-auto object-contain", wordmarkClassName)}
           width={704}

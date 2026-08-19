@@ -26,12 +26,12 @@ export const Route = createFileRoute("/")({
           "Practice, review, and mock exams in one app. Verify once at signup; study on your schedule.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://mediceen-journey.lovable.app/" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://mediceen-journey.lovable.app/" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
           applicationCategory: "EducationalApplication",
           operatingSystem: "iOS, Android",
           description,
-          url: "https://mediceen.app/",
+          url: "https://mediceen-journey.lovable.app/",
         }),
       },
     ],

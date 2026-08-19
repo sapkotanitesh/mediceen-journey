@@ -17,9 +17,9 @@ export const Route = createFileRoute("/about")({
         content: "Independent MECEE-BL prep for Nepal medical entrance students.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/about" },
+      { property: "og:url", content: "https://mediceen-journey.lovable.app/about" },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: "https://mediceen-journey.lovable.app/about" }],
   }),
   component: AboutPage,
 });

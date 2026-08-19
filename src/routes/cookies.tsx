@@ -13,9 +13,9 @@ export const Route = createFileRoute("/cookies")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/cookies" },
+      { property: "og:url", content: "https://mediceen-journey.lovable.app/cookies" },
     ],
-    links: [{ rel: "canonical", href: "/cookies" }],
+    links: [{ rel: "canonical", href: "https://mediceen-journey.lovable.app/cookies" }],
   }),
   component: CookiesPage,
 });

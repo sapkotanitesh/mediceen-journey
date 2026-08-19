@@ -1,42 +1,41 @@
-import { Apple, Play } from "lucide-react";
+import appStoreBadge from "@/assets/app-store-badge.png.asset.json";
+import googlePlayBadge from "@/assets/google-play-badge.png.asset.json";
 import { STORE_LINKS, isStoreLinkLive } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 type Store = "apple" | "google";
 
-const config: Record<Store, { url: string; small: string; large: string }> = {
+const config: Record<Store, { url: string; src: string; alt: string }> = {
   apple: {
     url: STORE_LINKS.appStore,
-    small: "Download on the",
-    large: "App Store",
+    src: appStoreBadge.url,
+    alt: "Download Mediceen on the App Store",
   },
   google: {
     url: STORE_LINKS.playStore,
-    small: "Get it on",
-    large: "Google Play",
+    src: googlePlayBadge.url,
+    alt: "Get Mediceen on Google Play",
   },
 };
 
 export function StoreBadge({ store, className }: { store: Store; className?: string }) {
-  const { url, small, large } = config[store];
+  const { url, src, alt } = config[store];
   const live = isStoreLinkLive(url);
-  const Icon = store === "apple" ? Apple : Play;
 
-  const content = (
-    <>
-      <Icon className="h-6 w-6 shrink-0" aria-hidden="true" />
-      <span className="text-left leading-tight">
-        <span className="block text-[0.68rem] uppercase tracking-[0.14em] opacity-70">{small}</span>
-        <span className="block font-display text-[1.05rem] font-semibold">{large}</span>
-      </span>
-    </>
+  const image = (
+    <img
+      src={src}
+      alt={alt}
+      width={1360}
+      height={410}
+      loading="lazy"
+      className="h-11 w-auto sm:h-12"
+    />
   );
 
   const base = cn(
-    "inline-flex items-center gap-3 rounded-2xl border px-5 py-3 transition-all duration-300",
-    live
-      ? "border-brand bg-brand text-primary-foreground hover:brightness-110"
-      : "border-border bg-surface text-muted-foreground",
+    "inline-flex items-center rounded-xl transition-all duration-300",
+    live ? "hover:-translate-y-0.5 hover:opacity-90" : "cursor-default opacity-90",
     className,
   );
 
@@ -45,22 +44,16 @@ export function StoreBadge({ store, className }: { store: Store; className?: str
       <span
         className={base}
         title="Store link will be available at launch"
-        aria-label={`${small} ${large} — coming at launch`}
+        aria-label={`${alt} — coming at launch`}
       >
-        {content}
+        {image}
       </span>
     );
   }
 
   return (
-    <a
-      href={url}
-      className={base}
-      aria-label={`${small} ${large}`}
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      {content}
+    <a href={url} className={base} aria-label={alt} rel="noopener noreferrer" target="_blank">
+      {image}
     </a>
   );
 }

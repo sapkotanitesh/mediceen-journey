@@ -14,9 +14,9 @@ export const Route = createFileRoute("/faq")({
       { property: "og:title", content: "Mediceen FAQ" },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/faq" },
+      { property: "og:url", content: "https://mediceen-journey.lovable.app/faq" },
     ],
-    links: [{ rel: "canonical", href: "/faq" }],
+    links: [{ rel: "canonical", href: "https://mediceen-journey.lovable.app/faq" }],
     scripts: [
       {
         type: "application/ld+json",

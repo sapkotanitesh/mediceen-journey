@@ -48,7 +48,11 @@ export const journeyTimeline: SceneBuilder = ({ root, reducedMotion }) => {
           const active = state.progress >= t - 0.02;
           gsap.set(el, { opacity: active ? 1 : 0.3 });
           const node = nodes[i];
-          if (node) gsap.set(node, { opacity: active ? 1 : 0.5, fill: active ? "var(--brand)" : "var(--background)" });
+          if (node)
+            gsap.set(node, {
+              opacity: active ? 1 : 0.5,
+              fill: active ? "var(--brand)" : "var(--background)",
+            });
         });
       },
     });

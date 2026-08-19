@@ -13,9 +13,9 @@ export const Route = createFileRoute("/terms")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "/terms" },
+      { property: "og:url", content: "https://mediceen-journey.lovable.app/terms" },
     ],
-    links: [{ rel: "canonical", href: "/terms" }],
+    links: [{ rel: "canonical", href: "https://mediceen-journey.lovable.app/terms" }],
   }),
   component: TermsPage,
 });
@@ -148,7 +148,7 @@ function TermsPage() {
 
         <LegalSection heading="14. Changes">
           <p>
-            We may modify these Terms. We will post updates at https://mediceen.app/terms. Material
+            We may modify these Terms. We will post updates at https://mediceen-journey.lovable.app/terms. Material
             changes may be communicated via the app or email where appropriate.
           </p>
         </LegalSection>

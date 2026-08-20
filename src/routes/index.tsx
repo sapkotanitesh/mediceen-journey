@@ -49,12 +49,7 @@ function Home() {
   return (
     <main>
       <Hero />
-      <PracticeSection />
-      <RecallSection />
-      <ReviewSection />
-      <MockSection />
-      <ProgressSection />
-      <WordOfTheDaySection />
+      <ProductShowcase />
       <JourneySection />
       <FinalMomentSection />
       <DownloadSection />

@@ -8,7 +8,12 @@ export function JourneySection() {
   const ref = useScrollAnimation<HTMLElement>(journeyTimeline);
 
   return (
-    <section ref={ref} className="py-28 sm:py-36" aria-labelledby="journey-heading">
+    <section
+      id="how-it-works"
+      ref={ref}
+      className="scroll-mt-24 py-28 sm:py-36"
+      aria-labelledby="journey-heading"
+    >
       <PageContainer>
         <SectionHeading
           align="center"

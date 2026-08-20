@@ -1,11 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Hero } from "@/components/sections/Hero";
-import { PracticeSection } from "@/components/sections/PracticeSection";
-import { RecallSection } from "@/components/sections/RecallSection";
-import { ReviewSection } from "@/components/sections/ReviewSection";
-import { MockSection } from "@/components/sections/MockSection";
-import { ProgressSection } from "@/components/sections/ProgressSection";
-import { WordOfTheDaySection } from "@/components/sections/WordOfTheDaySection";
+import { ProductShowcase } from "@/components/sections/ProductShowcase";
 import { JourneySection } from "@/components/sections/JourneySection";
 import { FinalMomentSection } from "@/components/sections/FinalMomentSection";
 import { DownloadSection } from "@/components/sections/DownloadSection";
@@ -54,12 +49,7 @@ function Home() {
   return (
     <main>
       <Hero />
-      <PracticeSection />
-      <RecallSection />
-      <ReviewSection />
-      <MockSection />
-      <ProgressSection />
-      <WordOfTheDaySection />
+      <ProductShowcase />
       <JourneySection />
       <FinalMomentSection />
       <DownloadSection />

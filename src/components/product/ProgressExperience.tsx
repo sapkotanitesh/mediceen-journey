@@ -1,5 +1,3 @@
-import { PhoneStatusBar } from "@/components/ui/PhoneMockup";
-
 const trend7 = [38, 44, 41, 52, 58, 63, 71];
 const dayLabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
@@ -36,9 +34,7 @@ export function ProgressExperience() {
 
   return (
     <div className="flex h-full flex-col">
-      <PhoneStatusBar label="Insights" />
-
-      <div className="px-5">
+      <div className="px-5 pt-5">
         <p className="font-display text-2xl font-bold text-brand-ink">Insights</p>
         <p className="mt-0.5 text-[0.7rem] text-muted-foreground">Last 7 days</p>
       </div>
@@ -68,10 +64,7 @@ export function ProgressExperience() {
       </div>
 
       <div className="mt-3 px-5 pb-6">
-        <div
-          data-insight-chart
-          className="rounded-2xl bg-card p-4 shadow-soft"
-        >
+        <div data-insight-chart className="rounded-2xl bg-card p-4 shadow-soft">
           <div className="flex items-center gap-2">
             <p className="font-display text-xl font-bold tabular-nums text-brand-ink">{last}%</p>
             <span className="rounded-xl bg-success-soft px-2 py-0.5 text-[0.62rem] font-semibold text-success">
@@ -82,12 +75,7 @@ export function ProgressExperience() {
 
           <div className="mt-3 border-t border-border pt-3">
             <svg viewBox="0 0 260 64" className="h-16 w-full overflow-visible" aria-hidden="true">
-              <path
-                d={toAreaPath(trend7)}
-                fill="var(--success)"
-                fillOpacity={0.06}
-                stroke="none"
-              />
+              <path d={toAreaPath(trend7)} fill="var(--success)" fillOpacity={0.06} stroke="none" />
               <path
                 data-insight-line
                 d={toPath(trend7)}

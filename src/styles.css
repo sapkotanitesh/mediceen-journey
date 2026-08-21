@@ -46,6 +46,8 @@
   --color-teal-soft: var(--teal-soft);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
   --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --shadow-soft: 0 1px 2px oklch(0.56 0.11 260 / 0.06), 0 12px 40px oklch(0.56 0.11 260 / 0.08);
@@ -87,6 +89,8 @@
   --border: oklch(0.918 0.008 259.6);
   --input: oklch(0.918 0.008 259.6);
   --ring: var(--brand);
+  --warning: oklch(0.75 0.15 75);
+  --warning-soft: oklch(0.95 0.04 75);
 }
 
 .dark {
@@ -120,6 +124,8 @@
   --border: oklch(0.31 0.018 259.6);
   --input: oklch(0.31 0.018 259.6);
   --ring: var(--brand);
+  --warning: oklch(0.78 0.14 75);
+  --warning-soft: oklch(0.32 0.06 75);
   --shadow-soft: 0 1px 2px oklch(0 0 0 / 0.4), 0 12px 40px oklch(0 0 0 / 0.45);
 }
 

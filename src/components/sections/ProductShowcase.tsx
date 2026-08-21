@@ -147,7 +147,8 @@ export function ProductShowcase() {
       </h2>
 
       {/* Desktop: sticky phone on the right, copy always from the left */}
-<PageContainer width="wide" className="relative hidden lg:grid lg:grid-cols-[max-content_1fr] lg:gap-6">
+<PageContainer width="wide" className="relative hidden lg:grid lg:grid-cols-[max-content_1fr] lg:gap-14">  
+  {/* gap-6 for justify center of sticky phone */}
   {/* Left column: scrolling copy panels */}
   <div className="relative">
     {steps.map((step, i) => (
@@ -162,7 +163,7 @@ export function ProductShowcase() {
   </div>
 
   {/* Right column: sticky phone */}
-  <div className="pointer-events-none sticky top-0 flex h-screen items-center justify-end">
+  <div className="pointer-events-none sticky top-0 flex h-screen items-center justify-center">
     <div className="relative">
 <PhoneMockup className="w-[min(25vw,17.5rem)]" screenClassName="bg-background">  
   {/* desktoptablet ko stuck vako phone ko size */}
@@ -223,10 +224,10 @@ function Copy({
   className?: string;
 }) {
   return (
-    <div className={cn("w-full max-w-[24rem]", className)}>
+    <div className={cn("w-full max-w-xl", className)}>
       <p
   data-panel-item
-  className="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-muted-foreground"
+  className="flex items-center gap-3 text-[0.72rem] font-semibold uppercase tracking-[0.32em] text-muted-foreground"
 >
   <span className="tabular-nums text-brand">{String(index + 1).padStart(2, "0")}</span>
   <span className="h-px w-8 bg-border" />
@@ -234,11 +235,11 @@ function Copy({
 </p>
 <h3
   data-panel-item
-  className="mt-4 text-balance-tight font-display text-[clamp(2.4rem,4vw,3.5rem)] font-bold leading-[1.05] text-brand-ink"
+  className="mt-4 text-balance-tight font-display text-[clamp(2.8rem,6.5vw,4.8rem)] font-semibold leading-[1.05] text-brand-ink"
 >
   {step.title}
 </h3>
-<p data-panel-item className="mt-5 max-w-md text-lg leading-relaxed text-muted-foreground">
+<p data-panel-item className="mt-5 max-w-md text-[clamp(1.02rem,1.4vw,1.2rem)] leading-relaxed text-muted-foreground">
   {step.description}
 </p>
 <ul data-panel-item className="mt-6 space-y-3">

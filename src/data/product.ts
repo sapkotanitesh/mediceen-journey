@@ -94,9 +94,9 @@ export const demoQuestions = [
 
 export const demoFlashcards = [
   {
-    subject: "Anatomy",
-    front: "Nerve supply of the diaphragm",
-    back: "Phrenic nerve (C3, C4, C5) — motor supply to the entire diaphragm.",
+    subject: "Health",
+    front: "Which organelle is known as the powerhouse of the cell?",
+    back: "Mitochondria",
   },
   {
     subject: "Biochemistry",

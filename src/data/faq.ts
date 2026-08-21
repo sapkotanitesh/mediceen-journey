@@ -54,7 +54,7 @@ export const faqItems: FaqItem[] = [
   },
   {
     question: "How do I delete my account?",
-    answer: "See Delete account & data or email [PRIVACY_EMAIL] from your registered email.",
+    answer: "See Delete account & data or email hello@redisdigital.com from your registered email.",
   },
   {
     question: "Does Mediceen give medical advice?",
@@ -64,10 +64,10 @@ export const faqItems: FaqItem[] = [
   {
     question: "Is Mediceen official MECEE / NMC?",
     answer:
-      "No. We are an independent prep platform unless [LEGAL_ENTITY_NAME] publishes a formal partnership announcement.",
+      "No. We are an independent prep platform unless Redis Digital publishes a formal partnership announcement.",
   },
   {
     question: "How do I get help?",
-    answer: "Email [SUPPORT_EMAIL] — see the Support page for what to include in your message.",
+    answer: "Email hello@redisdigital.com — see the Support page for what to include in your message.",
   },
 ];

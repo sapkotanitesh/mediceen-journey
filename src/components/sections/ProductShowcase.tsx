@@ -163,7 +163,7 @@ export function ProductShowcase() {
   </div>
 
   {/* Right column: sticky phone */}
-  <div className="pointer-events-none sticky top-0 flex h-screen items-center justify-center">
+  <div className="pointer-events-auto sticky top-0 flex h-screen items-center justify-center">
     <div className="relative">
 <PhoneMockup className="w-[min(25vw,17.5rem)]" screenClassName="bg-background">  
   {/* desktoptablet ko stuck vako phone ko size */}

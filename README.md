@@ -946,7 +946,7 @@ Delete Account
 Cookies
 Licenses
 
-© [YEAR] [LEGAL_ENTITY_NAME]
+© [YEAR] Redis Digital
 
 Use the legal content pack as the source of truth for footer structure and links.
 
@@ -1008,7 +1008,7 @@ Do not modify legal meaning.
 
 Preserve placeholders such as:
 
-[LEGAL_ENTITY_NAME]
+Redis Digital
 [REGISTERED_ADDRESS]
 [SUPPORT_EMAIL]
 [PRIVACY_EMAIL]

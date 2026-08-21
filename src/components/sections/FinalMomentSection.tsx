@@ -40,7 +40,7 @@ export function FinalMomentSection() {
         </p>
 
         <div data-final-phone className="mt-16">
-          <PhoneMockup className="w-[min(52vw,13rem)]">
+          <PhoneMockup className="w-[min(56vw,14rem)] lg:w-[min(25vw,17.5rem)]">
             <div className="flex h-full flex-col">
               <PhoneStatusBar label="Today" />
               <div className="flex flex-1 flex-col items-center justify-center gap-3 px-6 text-center">

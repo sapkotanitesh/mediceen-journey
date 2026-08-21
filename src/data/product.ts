@@ -68,14 +68,14 @@ export const subjects = [
 /** Illustrative MCQ content for the marketing mockups (not a live question bank). */
 export const demoQuestions = [
   {
-    subject: "Anatomy",
+    subject: "Biochemistry",
     difficulty: "Medium",
-    stem: "Which structure passes through the foramen ovale of the sphenoid bone?",
+    stem: "Which vitamin deficiency causes megaloblastic anaemia with neurological signs?",
     options: [
-      "Mandibular nerve",
-      "Maxillary nerve",
-      "Middle meningeal artery",
-      "Internal carotid artery",
+      "Vitamin B12",
+      "Vitamin C",
+      "Folate",
+      "Vitamin K",
     ],
   },
   {
